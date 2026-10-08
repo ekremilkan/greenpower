@@ -55,3 +55,12 @@ Her oturumda geçen kavramlar, kısa açıklamalarıyla.
 - **`next/image`:** Görseli otomatik boyutlandırıp modern biçimde sunan bileşen. `width`/`height` verilince sayfa yüklenirken yer ayrılır, içerik zıplamaz.
 - **Skill (Claude Code):** İçinde `SKILL.md` talimat dosyası olan klasör; belirli bir iş türü için yazılmış el kitabı. İlgili iş gelince yüklenir. Kişisel olanlar `~/.claude/skills/`, projeye özel olanlar `.claude/skills/` altında durur.
 - **Yazı logosu (wordmark):** Simge yerine yalnızca marka adının özel harflerle yazıldığı logo. GreenPower logosunda E harfi üç eğik çubukla çizilmiş.
+
+## 8 Ekim 2026 — Site yapısı
+
+- **Alt alan adı (subdomain):** Ana alan adının önüne eklenen bölüm: `magaza.alanadi.com`. Tarayıcı bunu ayrı bir site sayar; çerezler kendiliğinden paylaşılmaz.
+- **Proxy (eski adıyla Middleware):** İstek sayfaya ulaşmadan önce çalışan kod; adresi yeniden yazabilir, yönlendirebilir, başlık ekleyebilir. Next.js 16'da dosyası `src/proxy.ts`. Projede tek bir tane olur.
+- **Rewrite ile redirect farkı:** Redirect kullanıcıyı başka adrese gönderir, adres çubuğu değişir. Rewrite adres çubuğunu değiştirmeden arkada başka bir sayfayı gösterir; `magaza.alanadi.com/urun` → `/magaza/urun` böyle çalışacak.
+- **Route group:** `src/app/(kurumsal)/` gibi parantezli klasör. Adrese yansımaz, yalnızca sayfaları gruplayıp ortak bir layout vermeye yarar.
+- **Mobil öncelikli (mobile-first):** Önce dar ekran için tasarlayıp geniş ekranı üstüne eklemek. Tailwind'de öneksiz sınıf mobil içindir, `md:` ve `lg:` daha geniş ekranlarda devreye girer.
+- **Plugin ve marketplace (Claude Code):** Plugin, skill ve komutları paket hâlinde kurmanın yolu; marketplace bu paketlerin listelendiği depo. `/plugin marketplace add` depoyu tanıtır, `/plugin install` paketi kurar.
