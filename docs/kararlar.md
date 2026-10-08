@@ -44,3 +44,19 @@ Her karar: tarih, ne seçildi, neden, alternatifler, dikkat edilecekler.
 ### Git: proje kendi deposunda
 - **Neden:** Ev klasörü (`/Users/ekremilkan`) yanlışlıkla bir git deposu olmuş; proje ona karışmasın diye bu klasörde ayrı depo açıldı.
 - **Dikkat:** `.env*` dosyaları ve `.claude/settings.local.json` `.gitignore` içinde; gizli anahtarlar yalnızca `.env.local` dosyasında durur.
+
+## 8 Ekim 2026 — Şablon temizliği ve eski site incelemesi
+
+### Koyu tema kaldırıldı
+- **Neden:** Şablon, işletim sistemi koyu moddaysa zemini otomatik siyaha çeviriyordu. Marka renkleri tek temada tutarlı dursun; siyah logo koyu zeminde kaybolmasın.
+- **Alternatifler:** İki temayı da desteklemek: her renk ve görsel için iki sürüm gerekir, demo aşamasında karşılığı yok.
+
+### Logolar eski siteden alındı
+- `public/logo-dark.png` (açık zemin için siyah) ve `public/logo-light.png` (koyu zemin için beyaz), 900×207 PNG.
+- **Dikkat:** Müşteriden vektör (SVG) sürümü istenecek.
+
+### Açık kararlar (henüz verilmedi)
+- **Yeşilin tonu:** Eski sitenin stil dosyasında belirgin bir marka yeşili yok; ton seçilecek.
+- **Kapsam:** Eski sitede olup CLAUDE.md'de olmayanlar: Enerji Hesaplama aracı, Galeri, Işık Kulesi kategorisi, rakamlar (20+ yıl, 750+ proje, 1800+ müşteri), bülten aboneliği.
+- **Müşteri yorumları:** Eski sitedekiler şablon örneği gibi duruyor; müşteri doğrulamadan taşınmayacak.
+- **Tasarım yönü:** Kod yazmadan önce seçilecek ve `docs/tasarim.md`'ye yazılacak.

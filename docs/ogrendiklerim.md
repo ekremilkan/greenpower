@@ -46,3 +46,12 @@ Her oturumda geçen kavramlar, kısa açıklamalarıyla.
 - **Ortam değişkeni (.env.local):** Şifre ve API anahtarı gibi gizli değerlerin durduğu dosya. Asla commit edilmez.
 - **Mock veri:** Gerçek veritabanı yokken arayüzü göstermek için elle yazılmış sahte veri. Gerçek veri modeline uygun tutulursa sonra Prisma'ya geçiş kolay olur.
 - **npm audit:** Kurulu paketlerdeki bilinen güvenlik açıklarını listeler. Uyarının yayına giden kodda mı yoksa yalnızca geliştirme aracında mı olduğuna bakmak gerekir.
+
+## 8 Ekim 2026 — Şablon temizliği ve tasarım hazırlığı
+
+- **Metadata:** `layout.tsx` ya da `page.tsx` içinden dışa aktarılan `metadata` nesnesi; Next.js bunu sayfanın `<title>` ve açıklama etiketlerine çevirir. Arama sonuçlarında görünen başlık buradan gelir.
+- **`lang` özelliği:** `<html lang="tr">` tarayıcıya ve ekran okuyuculara sayfanın dilini söyler; doğru telaffuz, çeviri önerisi ve SEO için gerekir.
+- **Font subset:** Bir yazı tipinin yalnızca gereken karakter grubunu indirmek. Türkçe'deki ğ, ş, ı, İ `latin` grubunda değil `latin-ext` grubundadır.
+- **`next/image`:** Görseli otomatik boyutlandırıp modern biçimde sunan bileşen. `width`/`height` verilince sayfa yüklenirken yer ayrılır, içerik zıplamaz.
+- **Skill (Claude Code):** İçinde `SKILL.md` talimat dosyası olan klasör; belirli bir iş türü için yazılmış el kitabı. İlgili iş gelince yüklenir. Kişisel olanlar `~/.claude/skills/`, projeye özel olanlar `.claude/skills/` altında durur.
+- **Yazı logosu (wordmark):** Simge yerine yalnızca marka adının özel harflerle yazıldığı logo. GreenPower logosunda E harfi üç eğik çubukla çizilmiş.

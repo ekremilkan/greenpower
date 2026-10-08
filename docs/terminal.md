@@ -25,7 +25,16 @@
 - **`wc -l <dosya>`**: Satır sayısını verir. `-l` = "lines".
   - Örnek: `wc -l CLAUDE.md` → 68 (dosyanın değiştiğini böyle fark ettik)
 
+- **`cp <kaynak> <hedef>`**: Dosyayı kopyalar; kaynak yerinde kalır.
+  - Örnek: `cp gp-dark.png public/logo-dark.png` (logoyu kopyalarken adını da değiştirdik)
+- **`rm <dosya>`**: Dosyayı siler. Geri dönüşüm kutusuna gitmez, geri alınamaz; bu yüzden dosya adlarını tek tek yazmak `rm *`'dan güvenlidir.
+  - Örnek: `rm public/next.svg public/vercel.svg` (şablonun örnek görselleri)
+- **`tail -n 15 <dosya>`**: Dosyanın son 15 satırını gösterir. `-n` = satır sayısı. Uzun günlüklerde son olanları görmek için.
+- **`grep -o '<kalıp>' <dosya>`**: Dosyada kalıba uyan yerleri bulur. `-o` = tüm satırı değil yalnızca eşleşen parçayı yaz, `-i` = büyük/küçük harf ayırma.
+  - Örnek: eski sitenin HTML'inden renk kodlarını ve görsel adreslerini ayıkladık.
+
 ### npm
+- **`npm run lint`**: ESLint'i çalıştırır; sorun yoksa hiçbir şey yazdırmaz.
 - **`npx <paket>`**: Bir paketi kalıcı kurmadan tek seferlik çalıştırır.
   - Örnek: `npx create-next-app@latest greenpower --ts --tailwind --eslint --app --src-dir --import-alias "@/*" --use-npm --skip-install --disable-git --yes`
   - `@latest` = en güncel sürüm · `--ts` = TypeScript · `--tailwind` = Tailwind CSS · `--eslint` = ESLint · `--app` = App Router · `--src-dir` = kod `src/` altında · `--import-alias "@/*"` = `@/` kısayolu · `--use-npm` = paket yöneticisi npm · `--skip-install` = paketleri şimdi indirme · `--disable-git` = git deposu açma · `--yes` = kalan sorulara varsayılan cevabı ver
