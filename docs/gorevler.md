@@ -8,7 +8,7 @@ Teslim hedefi: 4 Aralık 2026.
 - [x] Next.js projesini kur, GitHub'a yükle
 - [x] Şablon kalıntılarını temizle, logoları ekle
 - [x] Site yapısı ve kapsam kararlarını yaz (CLAUDE.md, kararlar.md)
-- [ ] frontend-design skill'ini kur (Ekrem)
+- [x] frontend-design skill'ini kur (`.claude/skills/frontend-design/`)
 - [ ] Tasarım yönünü seç, `docs/tasarim.md`'ye yaz (yeşilin tonu, yazı tipleri, boşluk, şekil dili)
 
 ## 1. Temel

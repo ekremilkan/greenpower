@@ -96,3 +96,9 @@ Her karar: tarih, ne seçildi, neden, alternatifler, dikkat edilecekler.
 - **Karar:** Örnek siteler yalnızca yapı için referans; görsel dil markanın yeşil, beyaz, siyahı ve logosuyla özgün olacak. Mobil öncelikli. Görseller yer tutucu. Tasarım işlerinde frontend-design skill'i kullanılacak.
 - **Neden:** Proje aynı zamanda portfolyo vitrini; hazır şablon görünümünden uzak durmalı.
 - **Dikkat:** Skill yön verir, yerine karar vermez. Asıl kararlar `docs/tasarim.md`'de yazılı duracak.
+
+### frontend-design skill'i proje klasörüne kopyalandı
+- **Karar:** Skill, Anthropic'in resmî deposundan (`anthropics/skills`) indirilip `.claude/skills/frontend-design/` altına konuldu; Apache 2.0 lisans dosyası yanında.
+- **Neden:** VS Code eklentisinin sohbet kutusu `/plugin` komutunu desteklemiyor ve `claude` terminal aracı kurulu değil. Skill yalnızca bir `SKILL.md` dosyası olduğu için doğrudan kopyalamak aynı işi görüyor; ayrıca git'e girip projeyle taşınıyor.
+- **Alternatifler:** Terminal aracını kurup `/plugin install` ile eklemek: güncellemeler kendiliğinden gelir, ama skill bilgisayara kurulur, projeyle taşınmaz.
+- **Dikkat:** Bu kopya kendiliğinden güncellenmez. Dosya projeye girmeden önce okundu: yalnızca tasarım yönergeleri içeriyor, betik yok.
